@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Kedy",
   siteUrl: "https://kedyapp.com",
   description: {
-    tr: "Guzellik salonlari icin yapay zeka destekli iletisim ve operasyon platformu.",
+    tr: "Güzellik salonları için yapay zekâ destekli iletişim ve operasyon platformu.",
     en: "AI-powered communication and operations platform for appointment-based beauty salons.",
   },
   contact: {

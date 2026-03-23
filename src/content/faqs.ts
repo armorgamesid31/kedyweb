@@ -9,61 +9,61 @@ export const faqs: Localized<FAQCollection> = {
   tr: {
     home: [
       {
-        question: "Kedy hangi platformlarla calisir?",
+        question: "Kedy hangi platformlarla çalışır?",
         answer:
-          "Kedy ilk asamada Instagram ve WhatsApp mesaj akislari icin tasarlanmistir. Yapiniz buyudukce ek kanal ve operasyon senaryolari da ayni sistem mantigi ile genisletilebilir.",
+          "Kedy ilk aşamada Instagram ve WhatsApp mesaj akışları için tasarlandı. Ürün geliştikçe ek kanal ve operasyon senaryoları da aynı sistem mantığıyla genişletilebilir.",
       },
       {
         question: "Mesajlara tamamen otomatik cevap verebilir mi?",
         answer:
-          "Evet. Belirledigimiz senaryolarda Kedy sorulari karsilar, bilgi verir ve uygun oldugunda randevu akisini ilerletir. Hassas veya istisna durumlarda insan devri de devreye girer.",
+          "Evet. Tanımlanan senaryolarda Kedy soruları karşılar, bilgi verir ve uygun olduğunda randevu akışını ilerletir. Hassas veya istisna durumlarda ise konuşma ekibinize devredilebilir.",
       },
       {
-        question: "Istersem konusmayi ekibim devralabilir mi?",
+        question: "İstersem konuşmayı ekibim devralabilir mi?",
         answer:
-          "Evet. Kedy tam otomasyon ile insan kontrolu arasinda esnek calisir. Ekip uygun gordugu anda sohbete dahil olabilir ve sureci kaldigi yerden devam ettirebilir.",
+          "Evet. Kedy, tam otomasyon ile insan kontrolü arasında esnek çalışır. Ekibiniz uygun gördüğü anda sohbete dahil olup süreci kaldığı yerden sürdürebilir.",
       },
       {
-        question: "Randevu linki nasil calisir?",
+        question: "Randevu linki nasıl çalışır?",
         answer:
-          "Kedy, mesaj akisinda uygun anda paylasilan bir booking linki ile kullaniciyi gereksiz adimlar olmadan randevuya yonlendirir. Boylece mesajlasma ile rezervasyon arasindaki mesafe kisalir.",
+          "Kedy, konuşmanın doğru anında paylaşılan randevu linkiyle müşteriyi gereksiz adımlar olmadan rezervasyona yönlendirir. Böylece mesajlaşma ile randevu arasındaki mesafe kısalır.",
       },
       {
-        question: "Fiyatlandirma nasil belirlenir?",
+        question: "Fiyatlandırma nasıl belirlenir?",
         answer:
-          "Paketler ekip yapiniza, mesaj hacminize ve ihtiyac duydugunuz otomasyon derinligine gore sekillenir. Sayfadaki planlar hizli bir baslangic noktasi saglar; gerekirse daha uygun bir kurgu birlikte tasarlanir.",
+          "Paketler; ekip yapınıza, mesaj hacminize ve ihtiyaç duyduğunuz otomasyon seviyesine göre şekillenir. Sayfadaki planlar hızlı bir başlangıç noktası sunar; gerekirse size uygun kurgu birlikte netleştirilir.",
       },
       {
-        question: "Kurulum ne kadar surer?",
+        question: "Kurulum ne kadar sürer?",
         answer:
-          "Kurulum, ihtiyac duyulan kanal ve akislara gore degisir; ancak hedefimiz salonun operasyonunu bekletmeden hizli sekilde canliya almaktir.",
+          "Kurulum süresi, ihtiyaç duyulan kanal ve akışlara göre değişir. Hedefimiz, salon operasyonunu yavaşlatmadan sistemi hızlı biçimde canlıya almaktır.",
       },
       {
-        question: "Kucuk ekipler icin uygun mu?",
+        question: "Küçük ekipler için uygun mu?",
         answer:
-          "Kesinlikle. Kedy yalnizca buyuk ekipler icin degil; az kisiyle yogun mesaj trafigi yoneten salonlar icin de ciddi zaman kazanci saglar.",
+          "Kesinlikle. Kedy yalnızca büyük ekipler için değil; az kişiyle yoğun mesaj trafiği yöneten salonlar için de ciddi zaman kazancı sağlar.",
       },
       {
-        question: "WhatsApp ve Instagram ayni anda yonetilebilir mi?",
+        question: "WhatsApp ve Instagram aynı anda yönetilebilir mi?",
         answer:
-          "Evet. Kedy kanal bazli daginikligi azaltmak icin iki taraftaki iletisimi daha duzenli ve takip edilebilir bir akisa toplar.",
+          "Evet. Kedy, kanal bazlı dağınıklığı azaltmak için iki taraftaki iletişimi daha düzenli ve takip edilebilir bir akışta toplar.",
       },
     ],
     pricing: [
       {
-        question: "Paketler arasinda gecis yapabilir miyim?",
+        question: "Paketler arasında geçiş yapabilir miyim?",
         answer:
-          "Evet. Ihtiyaciniz buyudukce daha kapsamli bir pakete gecebilir veya size daha uygun bir kurgu planlayabiliriz.",
+          "Evet. İhtiyacınız büyüdükçe daha kapsamlı bir pakete geçebilir veya size daha uygun bir kurgu planlayabiliriz.",
       },
       {
-        question: "Kurulum ucreti var mi?",
+        question: "Kurulum ücreti var mı?",
         answer:
-          "Onboarding kapsamimiz pakete gore degisebilir. Net setup detaylari gorusme sirasinda sizin surecinize gore belirlenir.",
+          "Kurulum kapsamı pakete göre değişebilir. Net onboarding detayları, görüşme sırasında salonunuzun ihtiyaçlarına göre belirlenir.",
       },
       {
-        question: "Ozel entegrasyon veya ozel akis talep edebilir miyim?",
+        question: "Özel entegrasyon veya özel akış talep edebilir miyim?",
         answer:
-          "Evet. Signature seviyesinde ve ihtiyaca gore diger planlarda da ozel akis ve operasyon kurgulari degerlendirilebilir.",
+          "Evet. Özellikle Signature seviyesinde, ihtiyaca göre özel akış ve operasyon kurguları değerlendirilebilir.",
       },
     ],
   },

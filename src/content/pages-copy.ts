@@ -59,9 +59,9 @@ type SharedCopy = {
 
 export const sharedCopy: Localized<SharedCopy> = {
   tr: {
-    monthlyLabel: "Aylik faturalandirma",
-    backToPricing: "Tum paketleri gor",
-    contactLabel: "Iletisime gec",
+    monthlyLabel: "Aylık faturalandırma",
+    backToPricing: "Tüm paketleri gör",
+    contactLabel: "İletişime geç",
     subscribeHref: "/contact?intent=subscribe",
     loginHref: "/contact?intent=login",
   },
@@ -77,27 +77,27 @@ export const sharedCopy: Localized<SharedCopy> = {
 export const pricingPageCopy: Localized<PricingPageCopy> = {
   tr: {
     metadata: {
-      title: "Fiyatlandirma | Kedy",
-      description: "Kedy'nin guzellik salonlari icin hazirlanan aylik fiyat paketlerini ve kapsami gorun.",
+      title: "Fiyatlandırma | Kedy",
+      description: "Kedy’nin güzellik salonları için hazırlanan aylık paketlerini ve kapsamını inceleyin.",
     },
     hero: {
-      eyebrow: "Fiyatlandirma",
-      title: "Anlasilir paketler, daha sonra buyuyebilen bir yapi.",
+      eyebrow: "Fiyatlandırma",
+      title: "Anlaşılır paketler, ihtiyaç büyüdükçe genişleyebilen bir yapı.",
       description:
-        "Paketler su anlik aylik gosterimle sade tutuldu. Ihtiyac buyudukce ozellik derinligi ve operasyon kapsami ayni config uzerinden kolayca guncellenebilir.",
+        "Paketleri bugün için sade ve anlaşılır tuttuk. İhtiyaçlarınız büyüdüğünde plan kapsamı da aynı yapı üzerinden kolayca güncellenebilir.",
     },
-    note: "Tum fiyat ve plan metinleri tek bir icerik dosyasindan yonetilir. Bu sayede lansman sonrasinda degisiklik yapmak kolaydir.",
-    includedTitle: "Tum planlarin odaklandigi temel deger",
+    note: "Tüm plan adları, fiyatlar ve madde listeleri tek bir içerik dosyasından yönetilir. Böylece lansman sonrasında güncelleme yapmak kolaylaşır.",
+    includedTitle: "Tüm planların odaklandığı temel değer",
     includedItems: [
-      "Daha hizli mesaj karsilama duzeni",
-      "Tekrarlayan sorularin daha otomatik yonetimi",
-      "Mesaj icinde randevuya yaklastiran akis",
-      "Salon ekibi icin daha az manuel tekrar",
+      "Daha hızlı mesaj karşılama düzeni",
+      "Tekrarlayan soruların daha otomatik yönetimi",
+      "Mesaj içinde randevuya yaklaştıran akış",
+      "Salon ekibi için daha az manuel tekrar",
     ],
     faqHeading: {
-      eyebrow: "Paket sorulari",
-      title: "Fiyat tarafinda en cok sorulan konular.",
-      description: "Karar verme asamasinda acikligi ve guveni korumak icin ozet yanitlar sunuldu.",
+      eyebrow: "Paket soruları",
+      title: "Karar öncesinde en çok sorulan konular.",
+      description: "Fiyatlandırma tarafında netlik ve güven yaratmak için kısa, açık yanıtlar kullandık.",
     },
   },
   en: {
@@ -130,31 +130,31 @@ export const pricingPageCopy: Localized<PricingPageCopy> = {
 export const contactPageCopy: Localized<ContactPageCopy> = {
   tr: {
     metadata: {
-      title: "Iletisim | Kedy",
-      description: "Kedy ile abonelik, demo veya ihtiyaciniza uygun kurgu icin iletisime gecin.",
+      title: "İletişim | Kedy",
+      description: "Abonelik, demo veya salonunuza uygun kurgu için Kedy ile iletişime geçin.",
     },
     hero: {
-      eyebrow: "Iletisim",
-      title: "Salonunuz icin dogru akisi birlikte kuralim.",
+      eyebrow: "İletişim",
+      title: "Salonunuz için doğru akışı birlikte kuralım.",
       description:
-        "Abonelik, demo talebi veya surecinize uygun bir kurgu icin formu doldurun. Su an form simule edilir; ama deneyim gercek bir lead akisi gibi tasarlandi.",
+        "Abonelik, demo talebi veya işletmenize uygun kurgu için formu doldurun. Form şu anda simüle çalışıyor; ancak deneyim gerçek bir lead akışı gibi tasarlandı.",
     },
     infoCards: [
       { label: "E-posta", value: "hello@kedyapp.com", hint: "Genel sorular ve teklif talepleri" },
-      { label: "Telefon", value: "+90 (5XX) XXX XX XX", hint: "Hizli geri donus icin placeholder" },
-      { label: "Instagram", value: "@kedyapp", hint: "Marka ve urun guncellemeleri" },
+      { label: "Telefon", value: "+90 (5XX) XXX XX XX", hint: "Hızlı geri dönüş için örnek iletişim hattı" },
+      { label: "Instagram", value: "@kedyapp", hint: "Marka ve ürün güncellemeleri" },
     ],
     form: {
-      title: "Sizi taniyalim",
+      title: "Sizi tanıyalım",
       name: "Ad Soyad",
-      business: "Isletme Adi",
+      business: "İşletme Adı",
       phone: "Telefon",
       email: "E-posta",
-      instagram: "Instagram hesabi",
+      instagram: "Instagram hesabı",
       message: "Mesaj",
-      submit: "Talep Gonder",
-      success: "Tesekkurler. Talebiniz kaydedildi gibi gorunen bir demo onayi gosteriyoruz; bir sonraki adimda bu form gercek backend'e baglanabilir.",
-      helper: "Ornek: Gunde yaklasik 80-100 DM aliyoruz, hem hizli cevap hem de randevu akisi istiyoruz.",
+      submit: "Talep Gönder",
+      success: "Teşekkürler. Şimdilik örnek bir onay mesajı gösteriyoruz; bir sonraki adımda bu form gerçek bir backend’e kolayca bağlanabilir.",
+      helper: "Örnek: Günde yaklaşık 80-100 DM alıyoruz; hem hızlı yanıt hem de daha güçlü bir randevu akışı istiyoruz.",
     },
   },
   en: {
@@ -190,26 +190,26 @@ export const contactPageCopy: Localized<ContactPageCopy> = {
 
 export const footerCopy: Localized<FooterCopy> = {
   tr: {
-    description: "Guzellik salonlari icin AI destekli iletisim ve operasyon platformu.",
+    description: "Güzellik salonları için yapay zekâ destekli iletişim ve operasyon platformu.",
     columns: [
       {
-        title: "Urun",
+        title: "Ürün",
         links: [
-          { label: "Ozellikler", href: "/features" },
-          { label: "Fiyatlandirma", href: "/pricing" },
-          { label: "Iletisim", href: "/contact" },
+          { label: "Özellikler", href: "/features" },
+          { label: "Fiyatlandırma", href: "/pricing" },
+          { label: "İletişim", href: "/contact" },
         ],
       },
       {
         title: "Yasal",
         links: [
-          { label: "Gizlilik Politikasi", href: "/privacy-policy" },
-          { label: "Kullanim Kosullari", href: "/terms-of-service" },
+          { label: "Gizlilik Politikası", href: "/privacy-policy" },
+          { label: "Kullanım Koşulları", href: "/terms-of-service" },
           { label: "Veri Silme", href: "/data-deletion" },
         ],
       },
     ],
-    bottom: "Tum haklari saklidir.",
+    bottom: "Tüm hakları saklıdır.",
   },
   en: {
     description: "AI-powered communication and operations platform for appointment-based beauty salons.",

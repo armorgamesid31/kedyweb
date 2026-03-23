@@ -9,15 +9,15 @@ import { Textarea } from "@/components/ui/textarea";
 
 const intentMessages = {
   subscribe: {
-    tr: "Abonelik icin bilgi almak istiyorum.",
+    tr: "Abonelik için bilgi almak istiyorum.",
     en: "I would like more information about subscribing.",
   },
   login: {
-    tr: "Giris ve urun erisimi hakkinda bilgi almak istiyorum.",
+    tr: "Giriş ve ürün erişimi hakkında bilgi almak istiyorum.",
     en: "I would like information about login and product access.",
   },
   demo: {
-    tr: "Kisa bir urun tanitimi planlamak istiyorum.",
+    tr: "Kısa bir ürün tanıtımı planlamak istiyorum.",
     en: "I would like to schedule a short product walkthrough.",
   },
 } as const;
