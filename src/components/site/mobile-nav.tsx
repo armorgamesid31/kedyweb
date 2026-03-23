@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 import type { NavigationItem } from "@/content/types";
@@ -28,6 +28,19 @@ export function MobileNav({
 }) {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (!open) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <div className="lg:hidden">
       <button
@@ -40,9 +53,9 @@ export function MobileNav({
       </button>
 
       {open ? (
-        <div className="fixed inset-0 z-50 bg-foreground/45 backdrop-blur-sm">
-          <div className="ml-auto flex h-full w-full max-w-sm flex-col bg-background p-6">
-            <div className="flex items-center justify-between">
+        <div className="fixed inset-0 z-[70] bg-background">
+          <div className="flex min-h-screen flex-col bg-[radial-gradient(circle_at_top_right,rgba(244,122,32,0.14),transparent_22%),radial-gradient(circle_at_top_left,rgba(0,184,255,0.10),transparent_18%),linear-gradient(180deg,#ffffff_0%,#f7f6f6_100%)] p-6">
+            <div className="flex items-center justify-between border-b border-black/6 pb-6">
               <Link href={localizeHref(locale, "/")} className="font-display text-2xl font-bold text-foreground" onClick={() => setOpen(false)}>
                 Kedy
               </Link>
@@ -61,7 +74,7 @@ export function MobileNav({
                 <Link
                   key={item.href}
                   href={localizeHref(locale, item.href)}
-                  className="rounded-2xl px-4 py-3 text-base font-medium text-foreground hover:bg-white"
+                  className="rounded-2xl bg-white/85 px-4 py-3 text-base font-medium text-foreground shadow-sm ring-1 ring-black/6 transition hover:bg-white"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -69,7 +82,7 @@ export function MobileNav({
               ))}
             </div>
 
-            <div className="mt-auto space-y-3">
+            <div className="mt-auto space-y-3 pt-8">
               <Button asChild variant="secondary" className="w-full">
                 <Link href={localizeHref(locale, loginHref)} onClick={() => setOpen(false)}>
                   {loginLabel}

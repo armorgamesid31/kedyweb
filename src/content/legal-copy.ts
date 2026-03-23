@@ -12,48 +12,48 @@ type LegalPageCopy = {
 export const privacyCopy: Localized<LegalPageCopy> = {
   tr: {
     metadata: {
-      title: "Gizlilik Politikasi | Kedy",
-      description: "Kedy'nin gizlilik politikasini ve veri isleme yaklasimini inceleyin.",
+      title: "Gizlilik Politikası | Kedy",
+      description: "Kedy’nin gizlilik politikasını ve veri işleme yaklaşımını inceleyin.",
     },
     hero: {
       eyebrow: "Yasal",
-      title: "Gizlilik Politikasi",
-      description: "Bu sayfa profesyonel bir iskelet sunar ve nihai hukuki metinlerle kolayca guncellenebilir.",
+      title: "Gizlilik Politikası",
+      description: "Bu sayfa profesyonel bir iskelet sunar ve nihai hukuki metinlerle kolayca güncellenebilir.",
     },
     sections: [
       {
         title: "1. Toplanan bilgiler",
         body: [
-          "Kedy; iletisim formlari, hesap kurulumu ve hizmet kullanimi sirasinda paylasilan kimlik, iletisim ve isletme bilgilerini toplayabilir.",
-          "Mesajlasma akislarina iliskin operasyonel veriler, hizmetin sunulmasi ve iyilestirilmesi amaciyla islenebilir.",
+          "Kedy; iletişim formları, hesap kurulumu ve hizmet kullanımı sırasında paylaşılan kimlik, iletişim ve işletme bilgilerini toplayabilir.",
+          "Mesajlaşma akışlarına ilişkin operasyonel veriler, hizmetin sunulması ve iyileştirilmesi amacıyla işlenebilir.",
         ],
       },
       {
-        title: "2. Verilerin kullanim amaci",
+        title: "2. Verilerin kullanım amacı",
         body: [
-          "Veriler; hizmeti sunmak, talepleri yanitlamak, onboarding surecini planlamak ve platform deneyimini gelistirmek amaciyla kullanilir.",
-          "Ayrica guvenlik, destek ve yasal yukumluluklerin yerine getirilmesi icin de veri islenebilir.",
+          "Veriler; hizmeti sunmak, talepleri yanıtlamak, onboarding sürecini planlamak ve platform deneyimini geliştirmek amacıyla kullanılır.",
+          "Ayrıca güvenlik, destek ve yasal yükümlülüklerin yerine getirilmesi için de veri işlenebilir.",
         ],
       },
       {
-        title: "3. Ucuncu taraf hizmetler",
+        title: "3. Üçüncü taraf hizmetler",
         body: [
-          "Kedy, altyapi, analiz, mesajlasma veya destek saglayicilarindan yararlanabilir. Bu taraflarla yalnizca gerekli kapsamda veri paylasilir.",
-          "Uygulanacak nihai entegrasyonlara gore bu liste ileride guncellenebilir.",
+          "Kedy, altyapı, analiz, mesajlaşma veya destek sağlayıcılarından yararlanabilir. Bu taraflarla yalnızca gerekli kapsamda veri paylaşılır.",
+          "Uygulanacak nihai entegrasyonlara göre bu liste ileride güncellenebilir.",
         ],
       },
       {
-        title: "4. Saklama ve guvenlik",
+        title: "4. Saklama ve güvenlik",
         body: [
-          "Veriler, is amacina uygun sure boyunca ve makul teknik-idari onlemlerle korunur.",
-          "Yetkisiz erisimi, veri kaybini ve kotuye kullanimi azaltmaya yonelik guvenlik adimlari uygulanir.",
+          "Veriler, iş amacına uygun süre boyunca ve makul teknik-idari önlemlerle korunur.",
+          "Yetkisiz erişimi, veri kaybını ve kötüye kullanımı azaltmaya yönelik güvenlik adımları uygulanır.",
         ],
       },
       {
-        title: "5. Haklariniz",
+        title: "5. Haklarınız",
         body: [
-          "Yururlukteki mevzuat kapsaminda verilerinize erisme, duzeltme, silme veya isleme itiraz etme haklariniz olabilir.",
-          "Bu talepler icin iletisim kanalindan bize ulasabilirsiniz.",
+          "Yürürlükteki mevzuat kapsamında verilerinize erişme, düzeltme, silme veya işlenmesine itiraz etme haklarınız olabilir.",
+          "Bu talepler için iletişim kanallarımız üzerinden bize ulaşabilirsiniz.",
         ],
       },
     ],
@@ -111,48 +111,48 @@ export const privacyCopy: Localized<LegalPageCopy> = {
 export const termsCopy: Localized<LegalPageCopy> = {
   tr: {
     metadata: {
-      title: "Kullanim Kosullari | Kedy",
-      description: "Kedy hizmetine iliskin temel kullanim kosullarini inceleyin.",
+      title: "Kullanım Koşulları | Kedy",
+      description: "Kedy hizmetine ilişkin temel kullanım koşullarını inceleyin.",
     },
     hero: {
       eyebrow: "Yasal",
-      title: "Kullanim Kosullari",
-      description: "Bu yapi, hizmet sartlarini profesyonel bir formatta sunmak ve sonraki revizyonlari kolaylastirmak icin hazirlandi.",
+      title: "Kullanım Koşulları",
+      description: "Bu yapı, hizmet şartlarını profesyonel bir formatta sunmak ve sonraki revizyonları kolaylaştırmak için hazırlandı.",
     },
     sections: [
       {
-        title: "1. Hizmet kapsami",
+        title: "1. Hizmet kapsamı",
         body: [
-          "Kedy, guzellik salonlari icin mesajlasma, otomasyon ve operasyon akislari sunan bir SaaS platformudur.",
-          "Sunulan ozellikler zaman icinde degisebilir, genisleyebilir veya guncellenebilir.",
+          "Kedy, güzellik salonları için mesajlaşma, otomasyon ve operasyon akışları sunan bir SaaS platformudur.",
+          "Sunulan özellikler zaman içinde değişebilir, genişleyebilir veya güncellenebilir.",
         ],
       },
       {
         title: "2. Hesap ve sorumluluk",
         body: [
-          "Musteri, kendi hesap erisimlerinin gizliliginden ve hesap uzerinden gerceklestirilen islemlerden sorumludur.",
-          "Saglanan bilgilerin dogru ve guncel olmasi beklenir.",
+          "Müşteri, kendi hesap erişim bilgilerinin gizliliğinden ve hesap üzerinden gerçekleştirilen işlemlerden sorumludur.",
+          "Sağlanan bilgilerin doğru ve güncel olması beklenir.",
         ],
       },
       {
-        title: "3. Kabul edilebilir kullanim",
+        title: "3. Kabul edilebilir kullanım",
         body: [
-          "Platform; hukuka aykiri, zarar verici, yaniltici veya yetkisiz amaclarla kullanilamaz.",
-          "Kedy, hizmet butunlugunu tehdit eden kullanimlarda hesap kisitlamasi uygulayabilir.",
+          "Platform; hukuka aykırı, zarar verici, yanıltıcı veya yetkisiz amaçlarla kullanılamaz.",
+          "Kedy, hizmet bütünlüğünü tehdit eden kullanımlarda hesap kısıtlaması uygulayabilir.",
         ],
       },
       {
-        title: "4. Ucretlendirme ve degisiklikler",
+        title: "4. Ücretlendirme ve değişiklikler",
         body: [
-          "Fiyatlar, paket kapsami ve faturalandirma kosullari zaman icinde guncellenebilir.",
-          "Gecerli kosullar, musterinin kullandigi paket veya sozlesme kapsaminda ayrica belirtilir.",
+          "Fiyatlar, paket kapsamı ve faturalandırma koşulları zaman içinde güncellenebilir.",
+          "Geçerli koşullar, müşterinin kullandığı paket veya sözleşme kapsamında ayrıca belirtilir.",
         ],
       },
       {
-        title: "5. Sorumluluk siniri",
+        title: "5. Sorumluluk sınırı",
         body: [
-          "Hizmet, uygulanabilir mevzuatin izin verdigi olcude sunulur ve kesintisiz calisma taahhudu icermez.",
-          "Dolayli veya sonucsal zararlar konusunda nihai sorumluluk sinirlari resmi sozlesme metinlerinde netlestirilir.",
+          "Hizmet, uygulanabilir mevzuatın izin verdiği ölçüde sunulur ve kesintisiz çalışma taahhüdü içermez.",
+          "Dolaylı veya sonuçsal zararlar konusundaki nihai sorumluluk sınırları, resmi sözleşme metinlerinde netleştirilir.",
         ],
       },
     ],
@@ -210,41 +210,41 @@ export const termsCopy: Localized<LegalPageCopy> = {
 export const dataDeletionCopy: Localized<LegalPageCopy> = {
   tr: {
     metadata: {
-      title: "Veri Silme ve Baglanti Kaldirma | Kedy",
-      description: "Kedy uzerinden veri silme ve hesap baglantilarinin kaldirilmasi surecini ogrenin.",
+      title: "Veri Silme ve Bağlantı Kaldırma | Kedy",
+      description: "Kedy üzerinden veri silme ve hesap bağlantılarının kaldırılması sürecini öğrenin.",
     },
     hero: {
       eyebrow: "Yasal",
-      title: "Veri Silme ve Hesap Baglantisi Kaldirma",
-      description: "Instagram veya WhatsApp baglantilarinin kaldirilmasi ve veri silme taleplerinin profesyonel bicimde yonetilebilmesi icin hazir bir iskelet.",
+      title: "Veri Silme ve Hesap Bağlantısı Kaldırma",
+      description: "Instagram veya WhatsApp bağlantılarının kaldırılması ve veri silme taleplerinin profesyonel biçimde yönetilebilmesi için hazır bir iskelet.",
     },
     sections: [
       {
-        title: "1. Baglanti kaldirma talebi",
+        title: "1. Bağlantı kaldırma talebi",
         body: [
-          "Instagram veya WhatsApp baglantilarinizin devre disi birakilmasi icin destek kanalimiz uzerinden talep olusturabilirsiniz.",
-          "Talep sonrasinda entegrasyon erisimleri gozden gecirilir ve uygun oldugunda baglanti kaldirilir.",
+          "Instagram veya WhatsApp bağlantılarınızın devre dışı bırakılması için destek kanalımız üzerinden talep oluşturabilirsiniz.",
+          "Talep sonrasında entegrasyon erişimleri gözden geçirilir ve uygun olduğunda bağlantı kaldırılır.",
         ],
       },
       {
         title: "2. Veri silme talebi",
         body: [
-          "Kullanicilar, yururlukteki mevzuat kapsaminda belirli verilerin silinmesini talep edebilir.",
-          "Talep degerlendirmesi sirasinda hesabin sahipligi ve yasal yukumlulukler kontrol edilir.",
+          "Kullanıcılar, yürürlükteki mevzuat kapsamında belirli verilerin silinmesini talep edebilir.",
+          "Talep değerlendirmesi sırasında hesabın sahipliği ve yasal yükümlülükler kontrol edilir.",
         ],
       },
       {
         title: "3. Saklanabilecek veriler",
         body: [
-          "Yasal yukumluluk, guvenlik kaydi veya muhasebe gereklilikleri gibi sebeplerle bazi veriler belirli surelerle tutulabilir.",
-          "Silinmeyecek veri kategorileri ve saklama sureleri nihai hukuk metinlerinde netlestirilebilir.",
+          "Yasal yükümlülük, güvenlik kaydı veya muhasebe gereklilikleri gibi nedenlerle bazı veriler belirli sürelerle tutulabilir.",
+          "Silinmeyecek veri kategorileri ve saklama süreleri nihai hukuk metinlerinde netleştirilebilir.",
         ],
       },
       {
-        title: "4. Surec ve iletisim",
+        title: "4. Süreç ve iletişim",
         body: [
-          "Silme ve baglanti kaldirma talepleri, makul sure icinde sonuclandirilmaya calisilir.",
-          "Surece iliskin guncellemeler, talep sirasinda paylasilan iletisim bilgileri uzerinden iletilir.",
+          "Silme ve bağlantı kaldırma talepleri makul süre içinde sonuçlandırılmaya çalışılır.",
+          "Sürece ilişkin güncellemeler, talep sırasında paylaşılan iletişim bilgileri üzerinden iletilir.",
         ],
       },
     ],

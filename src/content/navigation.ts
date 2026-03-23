@@ -11,14 +11,14 @@ type NavigationContent = {
 export const navigation: Localized<NavigationContent> = {
   tr: {
     links: [
-      { label: "Ozellikler", href: "/features" },
-      { label: "Fiyatlandirma", href: "/pricing" },
-      { label: "Iletisim", href: "/contact" },
+      { label: "Özellikler", href: "/features" },
+      { label: "Fiyatlandırma", href: "/pricing" },
+      { label: "İletişim", href: "/contact" },
     ],
-    loginLabel: "Giris Yap",
+    loginLabel: "Giriş Yap",
     subscribeLabel: "Hizmete Abone Ol",
     languageLabel: "Dil",
-    mobileLabel: "Menu",
+    mobileLabel: "Menü",
   },
   en: {
     links: [
