@@ -20,8 +20,11 @@ type HomeCopy = {
       inboxSubtitle: string;
       bookingTitle: string;
       bookingSubtitle: string;
+      bookingFlowStart: string;
+      bookingFlowEnd: string;
       automationTitle: string;
       automationSubtitle: string;
+      automationBullets: string[];
       messageStream: {
         sender: string;
         text: string;
@@ -78,8 +81,15 @@ export const homeCopy: Localized<HomeCopy> = {
         inboxSubtitle: "Instagram ve WhatsApp ayni operasyon duzeninde.",
         bookingTitle: "Magic booking link",
         bookingSubtitle: "Dogru anda paylasilir, rezervasyona giden yolu kisaltir.",
+        bookingFlowStart: "Uygun saat secimi",
+        bookingFlowEnd: "Hizli rezervasyon",
         automationTitle: "AI + insan kontrolu",
         automationSubtitle: "Tekrarlayan sorulari otomatik, ozel durumlari ekibiniz yonetir.",
+        automationBullets: [
+          "Sik sorular otomatik karsilanir",
+          "Baglam degistiginde insan devir modu acilir",
+          "Mesajlar randevu niyetine gore yonlenir",
+        ],
         messageStream: [
           {
             sender: "Instagram DM",
@@ -263,8 +273,15 @@ export const homeCopy: Localized<HomeCopy> = {
         inboxSubtitle: "Instagram and WhatsApp handled in one system rhythm.",
         bookingTitle: "Magic booking link",
         bookingSubtitle: "Shared at the right moment to reduce booking friction.",
+        bookingFlowStart: "Choose an available slot",
+        bookingFlowEnd: "Complete the booking faster",
         automationTitle: "AI with human control",
         automationSubtitle: "Routine questions are automated, nuanced cases stay with your team.",
+        automationBullets: [
+          "Recurring questions are handled automatically",
+          "Human takeover opens when context changes",
+          "Conversations are routed by booking intent",
+        ],
         messageStream: [
           {
             sender: "Instagram DM",

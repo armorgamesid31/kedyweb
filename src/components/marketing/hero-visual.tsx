@@ -10,8 +10,11 @@ type HeroVisualProps = {
   inboxSubtitle: string;
   bookingTitle: string;
   bookingSubtitle: string;
+  bookingFlowStart: string;
+  bookingFlowEnd: string;
   automationTitle: string;
   automationSubtitle: string;
+  automationBullets: string[];
   messageStream: {
     sender: string;
     text: string;
@@ -24,8 +27,11 @@ export function HeroVisual({
   inboxSubtitle,
   bookingTitle,
   bookingSubtitle,
+  bookingFlowStart,
+  bookingFlowEnd,
   automationTitle,
   automationSubtitle,
+  automationBullets,
   messageStream,
 }: HeroVisualProps) {
   return (
@@ -79,9 +85,9 @@ export function HeroVisual({
               <div className="rounded-2xl bg-orange/8 p-4">
                 <div className="text-sm font-semibold text-foreground">kedy.app/randevu</div>
                 <div className="mt-2 flex items-center gap-2 text-sm text-muted">
-                  Uygun saat secimi
+                  {bookingFlowStart}
                   <ArrowRight className="h-4 w-4 text-orange" />
-                  Hizli rezervasyon
+                  {bookingFlowEnd}
                 </div>
               </div>
             </CardContent>
@@ -96,11 +102,7 @@ export function HeroVisual({
               <CardDescription>{automationSubtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
-              {[
-                "Sik sorular otomatik karsilanir",
-                "Baglam degistiginde insan devir modu acilir",
-                "Mesajlar randevu niyetine gore yonlenir",
-              ].map((line) => (
+              {automationBullets.map((line) => (
                 <div key={line} className="rounded-2xl border border-black/8 bg-background px-4 py-3 text-sm text-foreground">
                   {line}
                 </div>
