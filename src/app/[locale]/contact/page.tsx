@@ -5,12 +5,25 @@ import { ContactForm } from "@/components/marketing/contact-form";
 import { PageHero } from "@/components/marketing/page-hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { contactPageCopy } from "@/content/pages-copy";
-import { type AsyncParams, getLocaleFromParams } from "@/lib/i18n";
+import { type AsyncParams, type Locale, getLocaleFromParams } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/metadata";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
+
+async function getContactRuntimeContent(locale: Locale) {
+  const runtime = await fetchRuntimeContent({
+    surface: "marketing_site",
+    page: "contact",
+    locale,
+  });
+
+  return applyRuntimeOverrides(contactPageCopy[locale], runtime, {
+    prefixes: ["contact", "content", ""],
+  });
+}
 
 export async function generateMetadata({ params }: { params: AsyncParams }): Promise<Metadata> {
   const locale = await getLocaleFromParams(params);
-  const content = contactPageCopy[locale];
+  const content = await getContactRuntimeContent(locale);
 
   return buildPageMetadata(locale, {
     title: content.metadata.title,
@@ -21,7 +34,7 @@ export async function generateMetadata({ params }: { params: AsyncParams }): Pro
 
 export default async function ContactPage({ params }: { params: AsyncParams }) {
   const locale = await getLocaleFromParams(params);
-  const content = contactPageCopy[locale];
+  const content = await getContactRuntimeContent(locale);
 
   return (
     <>

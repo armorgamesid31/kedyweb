@@ -2,12 +2,25 @@ import type { Metadata } from "next";
 
 import { LegalTemplate } from "@/components/marketing/legal-template";
 import { dataDeletionCopy } from "@/content/legal-copy";
-import { type AsyncParams, getLocaleFromParams } from "@/lib/i18n";
+import { type AsyncParams, type Locale, getLocaleFromParams } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/metadata";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
+
+async function getDataDeletionRuntimeContent(locale: Locale) {
+  const runtime = await fetchRuntimeContent({
+    surface: "legal",
+    page: "data-deletion",
+    locale,
+  });
+
+  return applyRuntimeOverrides(dataDeletionCopy[locale], runtime, {
+    prefixes: ["data-deletion", "dataDeletion", "content", ""],
+  });
+}
 
 export async function generateMetadata({ params }: { params: AsyncParams }): Promise<Metadata> {
   const locale = await getLocaleFromParams(params);
-  const content = dataDeletionCopy[locale];
+  const content = await getDataDeletionRuntimeContent(locale);
 
   return buildPageMetadata(locale, {
     title: content.metadata.title,
@@ -18,7 +31,7 @@ export async function generateMetadata({ params }: { params: AsyncParams }): Pro
 
 export default async function DataDeletionPage({ params }: { params: AsyncParams }) {
   const locale = await getLocaleFromParams(params);
-  const content = dataDeletionCopy[locale];
+  const content = await getDataDeletionRuntimeContent(locale);
 
   return <LegalTemplate eyebrow={content.hero.eyebrow} title={content.hero.title} description={content.hero.description} sections={content.sections} />;
 }

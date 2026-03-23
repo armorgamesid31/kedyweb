@@ -4,13 +4,24 @@ import { navigation } from "@/content/navigation";
 import { sharedCopy } from "@/content/pages-copy";
 import type { Locale } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/site/language-switcher";
 import { MobileNav } from "@/components/site/mobile-nav";
 
-export function Header({ locale }: { locale: Locale }) {
-  const nav = navigation[locale];
-  const shared = sharedCopy[locale];
+export async function Header({ locale }: { locale: Locale }) {
+  const runtime = await fetchRuntimeContent({
+    surface: "marketing_site",
+    page: "navigation",
+    locale,
+  });
+
+  const nav = applyRuntimeOverrides(navigation[locale], runtime, {
+    prefixes: ["header.navigation", "header.nav", "header", "navigation", "nav", ""],
+  });
+  const shared = applyRuntimeOverrides(sharedCopy[locale], runtime, {
+    prefixes: ["header.shared", "shared", "sharedCopy", ""],
+  });
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-background/80 backdrop-blur-xl">

@@ -6,12 +6,30 @@ import { IconGrid } from "@/components/marketing/icon-grid";
 import { PageHero } from "@/components/marketing/page-hero";
 import { featuresCopy } from "@/content/features-copy";
 import { sharedCopy } from "@/content/pages-copy";
-import { type AsyncParams, getLocaleFromParams } from "@/lib/i18n";
+import { type AsyncParams, type Locale, getLocaleFromParams } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/metadata";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
+
+async function getFeaturesRuntimeData(locale: Locale) {
+  const runtime = await fetchRuntimeContent({
+    surface: "marketing_site",
+    page: "features",
+    locale,
+  });
+
+  return {
+    content: applyRuntimeOverrides(featuresCopy[locale], runtime, {
+      prefixes: ["features", "content", ""],
+    }),
+    shared: applyRuntimeOverrides(sharedCopy[locale], runtime, {
+      prefixes: ["shared", "sharedCopy", ""],
+    }),
+  };
+}
 
 export async function generateMetadata({ params }: { params: AsyncParams }): Promise<Metadata> {
   const locale = await getLocaleFromParams(params);
-  const content = featuresCopy[locale];
+  const { content } = await getFeaturesRuntimeData(locale);
 
   return buildPageMetadata(locale, {
     title: content.metadata.title,
@@ -22,8 +40,7 @@ export async function generateMetadata({ params }: { params: AsyncParams }): Pro
 
 export default async function FeaturesPage({ params }: { params: AsyncParams }) {
   const locale = await getLocaleFromParams(params);
-  const content = featuresCopy[locale];
-  const shared = sharedCopy[locale];
+  const { content, shared } = await getFeaturesRuntimeData(locale);
 
   return (
     <>

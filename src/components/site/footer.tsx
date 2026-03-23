@@ -3,9 +3,18 @@ import Link from "next/link";
 import { footerCopy } from "@/content/pages-copy";
 import type { Locale } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
 
-export function Footer({ locale }: { locale: Locale }) {
-  const content = footerCopy[locale];
+export async function Footer({ locale }: { locale: Locale }) {
+  const runtime = await fetchRuntimeContent({
+    surface: "marketing_site",
+    page: "footer",
+    locale,
+  });
+
+  const content = applyRuntimeOverrides(footerCopy[locale], runtime, {
+    prefixes: ["footer", "footerCopy", ""],
+  });
 
   return (
     <footer className="border-t border-black/6 bg-white">

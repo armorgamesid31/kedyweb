@@ -16,12 +16,36 @@ import { faqs } from "@/content/faqs";
 import { homeCopy } from "@/content/home-copy";
 import { sharedCopy } from "@/content/pages-copy";
 import { pricingPlans } from "@/content/pricing";
-import { type AsyncParams, getLocaleFromParams, localizeHref } from "@/lib/i18n";
+import { type AsyncParams, type Locale, getLocaleFromParams, localizeHref } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/metadata";
+import { applyRuntimeOverrides, fetchRuntimeContent } from "@/lib/runtime-content";
+
+async function getHomeRuntimeData(locale: Locale) {
+  const runtime = await fetchRuntimeContent({
+    surface: "marketing_site",
+    page: "home",
+    locale,
+  });
+
+  return {
+    content: applyRuntimeOverrides(homeCopy[locale], runtime, {
+      prefixes: ["home", "content", ""],
+    }),
+    shared: applyRuntimeOverrides(sharedCopy[locale], runtime, {
+      prefixes: ["shared", "sharedCopy", ""],
+    }),
+    plans: applyRuntimeOverrides(pricingPlans[locale], runtime, {
+      prefixes: ["plans", "pricingPlans", ""],
+    }),
+    faqItems: applyRuntimeOverrides(faqs[locale].home, runtime, {
+      prefixes: ["faqs.home", "faq.home", "homeFaq", ""],
+    }),
+  };
+}
 
 export async function generateMetadata({ params }: { params: AsyncParams }): Promise<Metadata> {
   const locale = await getLocaleFromParams(params);
-  const content = homeCopy[locale];
+  const { content } = await getHomeRuntimeData(locale);
 
   return buildPageMetadata(locale, {
     title: content.metadata.title,
@@ -31,10 +55,7 @@ export async function generateMetadata({ params }: { params: AsyncParams }): Pro
 
 export default async function HomePage({ params }: { params: AsyncParams }) {
   const locale = await getLocaleFromParams(params);
-  const content = homeCopy[locale];
-  const shared = sharedCopy[locale];
-  const plans = pricingPlans[locale];
-  const faqItems = faqs[locale].home;
+  const { content, shared, plans, faqItems } = await getHomeRuntimeData(locale);
 
   return (
     <>
