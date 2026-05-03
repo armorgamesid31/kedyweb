@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   contact: {
     email: "hello@kedyapp.com",
-    phone: "+90 (5XX) XXX XX XX",
+    phone: "+905364568084",
     instagram: "@kedyapp",
   },
   legalPaths: ["/privacy-policy", "/terms-of-service", "/data-deletion"],

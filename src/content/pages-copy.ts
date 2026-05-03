@@ -1,4 +1,4 @@
-import type { Localized, SectionHeading } from "@/content/types";
+﻿import type { Localized, SectionHeading } from "@/content/types";
 
 type PricingPageCopy = {
   metadata: {
@@ -59,9 +59,9 @@ type SharedCopy = {
 
 export const sharedCopy: Localized<SharedCopy> = {
   tr: {
-    monthlyLabel: "Aylık faturalandırma",
-    backToPricing: "Tüm paketleri gör",
-    contactLabel: "İletişime geç",
+    monthlyLabel: "AylÄ±k faturalandÄ±rma",
+    backToPricing: "TÃ¼m paketleri gÃ¶r",
+    contactLabel: "Ä°letiÅŸime geÃ§",
     subscribeHref: "/contact?intent=subscribe",
     loginHref: "/contact?intent=login",
   },
@@ -77,27 +77,27 @@ export const sharedCopy: Localized<SharedCopy> = {
 export const pricingPageCopy: Localized<PricingPageCopy> = {
   tr: {
     metadata: {
-      title: "Fiyatlandırma | Kedy",
-      description: "Kedy’nin güzellik salonları için hazırlanan aylık paketlerini ve kapsamını inceleyin.",
+      title: "FiyatlandÄ±rma | Kedy",
+      description: "Kedyâ€™nin gÃ¼zellik salonlarÄ± iÃ§in hazÄ±rlanan aylÄ±k paketlerini ve kapsamÄ±nÄ± inceleyin.",
     },
     hero: {
-      eyebrow: "Fiyatlandırma",
-      title: "Anlaşılır paketler, ihtiyaç büyüdükçe genişleyebilen bir yapı.",
+      eyebrow: "FiyatlandÄ±rma",
+      title: "AnlaÅŸÄ±lÄ±r paketler, ihtiyaÃ§ bÃ¼yÃ¼dÃ¼kÃ§e geniÅŸleyebilen bir yapÄ±.",
       description:
-        "Paketleri bugün için sade ve anlaşılır tuttuk. İhtiyaçlarınız büyüdüğünde plan kapsamı da aynı yapı üzerinden kolayca güncellenebilir.",
+        "Paketleri bugÃ¼n iÃ§in sade ve anlaÅŸÄ±lÄ±r tuttuk. Ä°htiyaÃ§larÄ±nÄ±z bÃ¼yÃ¼dÃ¼ÄŸÃ¼nde plan kapsamÄ± da aynÄ± yapÄ± Ã¼zerinden kolayca gÃ¼ncellenebilir.",
     },
-    note: "Tüm plan adları, fiyatlar ve madde listeleri tek bir içerik dosyasından yönetilir. Böylece lansman sonrasında güncelleme yapmak kolaylaşır.",
-    includedTitle: "Tüm planların odaklandığı temel değer",
+    note: "TÃ¼m plan adlarÄ±, fiyatlar ve madde listeleri tek bir iÃ§erik dosyasÄ±ndan yÃ¶netilir. BÃ¶ylece lansman sonrasÄ±nda gÃ¼ncelleme yapmak kolaylaÅŸÄ±r.",
+    includedTitle: "TÃ¼m planlarÄ±n odaklandÄ±ÄŸÄ± temel deÄŸer",
     includedItems: [
-      "Daha hızlı mesaj karşılama düzeni",
-      "Tekrarlayan soruların daha otomatik yönetimi",
-      "Mesaj içinde randevuya yaklaştıran akış",
-      "Salon ekibi için daha az manuel tekrar",
+      "Daha hÄ±zlÄ± mesaj karÅŸÄ±lama dÃ¼zeni",
+      "Tekrarlayan sorularÄ±n daha otomatik yÃ¶netimi",
+      "Mesaj iÃ§inde randevuya yaklaÅŸtÄ±ran akÄ±ÅŸ",
+      "Salon ekibi iÃ§in daha az manuel tekrar",
     ],
     faqHeading: {
-      eyebrow: "Paket soruları",
-      title: "Karar öncesinde en çok sorulan konular.",
-      description: "Fiyatlandırma tarafında netlik ve güven yaratmak için kısa, açık yanıtlar kullandık.",
+      eyebrow: "Paket sorularÄ±",
+      title: "Karar Ã¶ncesinde en Ã§ok sorulan konular.",
+      description: "FiyatlandÄ±rma tarafÄ±nda netlik ve gÃ¼ven yaratmak iÃ§in kÄ±sa, aÃ§Ä±k yanÄ±tlar kullandÄ±k.",
     },
   },
   en: {
@@ -130,31 +130,31 @@ export const pricingPageCopy: Localized<PricingPageCopy> = {
 export const contactPageCopy: Localized<ContactPageCopy> = {
   tr: {
     metadata: {
-      title: "İletişim | Kedy",
-      description: "Abonelik, demo veya salonunuza uygun kurgu için Kedy ile iletişime geçin.",
+      title: "Ä°letiÅŸim | Kedy",
+      description: "Abonelik, demo veya salonunuza uygun kurgu iÃ§in Kedy ile iletiÅŸime geÃ§in.",
     },
     hero: {
-      eyebrow: "İletişim",
-      title: "Salonunuz için doğru akışı birlikte kuralım.",
+      eyebrow: "Ä°letiÅŸim",
+      title: "Salonunuz iÃ§in doÄŸru akÄ±ÅŸÄ± birlikte kuralÄ±m.",
       description:
-        "Abonelik, demo talebi veya işletmenize uygun kurgu için formu doldurun. Form şu anda simüle çalışıyor; ancak deneyim gerçek bir lead akışı gibi tasarlandı.",
+        "Abonelik, demo talebi veya iÅŸletmenize uygun kurgu iÃ§in formu doldurun. Form ÅŸu anda simÃ¼le Ã§alÄ±ÅŸÄ±yor; ancak deneyim gerÃ§ek bir lead akÄ±ÅŸÄ± gibi tasarlandÄ±.",
     },
     infoCards: [
       { label: "E-posta", value: "hello@kedyapp.com", hint: "Genel sorular ve teklif talepleri" },
-      { label: "Telefon", value: "+90 (5XX) XXX XX XX", hint: "Hızlı geri dönüş için örnek iletişim hattı" },
-      { label: "Instagram", value: "@kedyapp", hint: "Marka ve ürün güncellemeleri" },
+      { label: "Telefon", value: "+905364568084", hint: "HÄ±zlÄ± geri dÃ¶nÃ¼ÅŸ iÃ§in Ã¶rnek iletiÅŸim hattÄ±" },
+      { label: "Instagram", value: "@kedyapp", hint: "Marka ve Ã¼rÃ¼n gÃ¼ncellemeleri" },
     ],
     form: {
-      title: "Sizi tanıyalım",
+      title: "Sizi tanÄ±yalÄ±m",
       name: "Ad Soyad",
-      business: "İşletme Adı",
+      business: "Ä°ÅŸletme AdÄ±",
       phone: "Telefon",
       email: "E-posta",
-      instagram: "Instagram hesabı",
+      instagram: "Instagram hesabÄ±",
       message: "Mesaj",
-      submit: "Talep Gönder",
-      success: "Teşekkürler. Şimdilik örnek bir onay mesajı gösteriyoruz; bir sonraki adımda bu form gerçek bir backend’e kolayca bağlanabilir.",
-      helper: "Örnek: Günde yaklaşık 80-100 DM alıyoruz; hem hızlı yanıt hem de daha güçlü bir randevu akışı istiyoruz.",
+      submit: "Talep GÃ¶nder",
+      success: "TeÅŸekkÃ¼rler. Åimdilik Ã¶rnek bir onay mesajÄ± gÃ¶steriyoruz; bir sonraki adÄ±mda bu form gerÃ§ek bir backendâ€™e kolayca baÄŸlanabilir.",
+      helper: "Ã–rnek: GÃ¼nde yaklaÅŸÄ±k 80-100 DM alÄ±yoruz; hem hÄ±zlÄ± yanÄ±t hem de daha gÃ¼Ã§lÃ¼ bir randevu akÄ±ÅŸÄ± istiyoruz.",
     },
   },
   en: {
@@ -170,7 +170,7 @@ export const contactPageCopy: Localized<ContactPageCopy> = {
     },
     infoCards: [
       { label: "Email", value: "hello@kedyapp.com", hint: "General questions and sales conversations" },
-      { label: "Phone", value: "+90 (5XX) XXX XX XX", hint: "Placeholder line for direct contact" },
+      { label: "Phone", value: "+905364568084", hint: "Direct contact line" },
       { label: "Instagram", value: "@kedyapp", hint: "Brand updates and product visibility" },
     ],
     form: {
@@ -190,26 +190,26 @@ export const contactPageCopy: Localized<ContactPageCopy> = {
 
 export const footerCopy: Localized<FooterCopy> = {
   tr: {
-    description: "Güzellik salonları için yapay zekâ destekli iletişim ve operasyon platformu.",
+    description: "GÃ¼zellik salonlarÄ± iÃ§in yapay zekÃ¢ destekli iletiÅŸim ve operasyon platformu.",
     columns: [
       {
-        title: "Ürün",
+        title: "ÃœrÃ¼n",
         links: [
-          { label: "Özellikler", href: "/features" },
-          { label: "Fiyatlandırma", href: "/pricing" },
-          { label: "İletişim", href: "/contact" },
+          { label: "Ã–zellikler", href: "/features" },
+          { label: "FiyatlandÄ±rma", href: "/pricing" },
+          { label: "Ä°letiÅŸim", href: "/contact" },
         ],
       },
       {
         title: "Yasal",
         links: [
-          { label: "Gizlilik Politikası", href: "/privacy-policy" },
-          { label: "Kullanım Koşulları", href: "/terms-of-service" },
+          { label: "Gizlilik PolitikasÄ±", href: "/privacy-policy" },
+          { label: "KullanÄ±m KoÅŸullarÄ±", href: "/terms-of-service" },
           { label: "Veri Silme", href: "/data-deletion" },
         ],
       },
     ],
-    bottom: "Tüm hakları saklıdır.",
+    bottom: "TÃ¼m haklarÄ± saklÄ±dÄ±r.",
   },
   en: {
     description: "AI-powered communication and operations platform for appointment-based beauty salons.",
@@ -234,3 +234,5 @@ export const footerCopy: Localized<FooterCopy> = {
     bottom: "All rights reserved.",
   },
 };
+
+
