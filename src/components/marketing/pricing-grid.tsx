@@ -39,7 +39,7 @@ export function PricingGrid({ locale, plans, subscribeHref }: { locale: Locale; 
               ))}
             </ul>
             <Button asChild variant={plan.featured ? "default" : "secondary"} className="w-full">
-              <Link href={localizeHref(locale, `${subscribeHref}&plan=${plan.id}`)}>{plan.ctaLabel}</Link>
+              <Link href={localizeHref(locale, `/checkout?plan=${plan.id}`)}>{plan.ctaLabel}</Link>
             </Button>
           </CardContent>
         </Card>
