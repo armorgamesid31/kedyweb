@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 export default function CheckoutStartPage() {
-  const [planKey, setPlanKey] = useState("studio");
+  const [planKey, setPlanKey] = useState("profesyonel_plus");
   const [ownerName, setOwnerName] = useState("");
   const [ownerEmail, setOwnerEmail] = useState("");
   const [ownerPhone, setOwnerPhone] = useState("");
@@ -71,9 +71,8 @@ export default function CheckoutStartPage() {
             onChange={(e) => setPlanKey(e.target.value)}
             className="h-12 w-full rounded-2xl border border-black/10 px-4 text-sm"
           >
-            <option value="launch">Launch</option>
-            <option value="studio">Studio</option>
-            <option value="signature">Signature</option>
+            <option value="temel">Temel - ₺500/ay</option>
+            <option value="profesyonel_plus">Profesyonel+ - İlk 3 ay ₺999, sonra ₺3.000/ay</option>
           </select>
         </div>
         <div>
