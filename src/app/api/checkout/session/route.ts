@@ -33,6 +33,7 @@ export async function POST(req: NextRequest) {
       ownerEmail: body?.ownerEmail,
       ownerPhone: body?.ownerPhone,
       salonNameDraft: body?.salonNameDraft,
+      referralCode: body?.referralCode,
       locale,
       successUrl,
       cancelUrl,
@@ -45,4 +46,3 @@ export async function POST(req: NextRequest) {
   }
   return NextResponse.json(payload);
 }
-
